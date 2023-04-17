@@ -27,7 +27,7 @@ Counter2 >> decrement [
 
 { #category : #accessing }
 Counter2 >> increment2 [
-
+self undefMethof.
 	count := count + 2
 ]
 
