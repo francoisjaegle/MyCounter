@@ -36,3 +36,18 @@ Counter >> increment2 [
 
 	count := count + 2
 ]
+
+{ #category : #accessing }
+Counter >> initialize [
+
+	super initialize.
+	count := 0
+]
+
+{ #category : #accessing }
+Counter >> printOn: aStream [
+
+	super printOn: aStream.
+	aStream nextPutAll: ' withValue: ' , count printString.
+	aStream cr
+]
