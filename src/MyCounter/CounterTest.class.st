@@ -11,7 +11,7 @@ Class {
 CounterTest >> testCounterIsSetAndRead [
 
 | c |
-c:= Counter new.
+c:= Counter2 new.
 c count: 7.
 c count 
 ]
@@ -20,7 +20,7 @@ c count
 CounterTest >> testDecrement [
 
 | c |
-c:= Counter new.
+c:= Counter2 new.
 c count: 2.
 c decrement;decrement.
 self assert: c count equals: 0 
@@ -30,9 +30,9 @@ self assert: c count equals: 0
 CounterTest >> testIncrement [
 
 | c |
-c:= Counter new.
+c:= Counter2 new.
 c count: 2.
-c increment;increment.
+c incrementbis;incrementbis.
 self assert: c count equals: 4 
 ]
 
@@ -40,6 +40,6 @@ self assert: c count equals: 4
 CounterTest >> testInitialize [
 
 | c |
-c:= Counter new.
+c:= Counter2 new.
 self assert: c count equals: 0
 ]

@@ -1,5 +1,5 @@
 Class {
-	#name : #Counter,
+	#name : #Counter2,
 	#superclass : #Object,
 	#instVars : [
 		'count'
@@ -8,44 +8,44 @@ Class {
 }
 
 { #category : #accessing }
-Counter >> count [
+Counter2 >> count [
 
 	^ count 
 ]
 
 { #category : #accessing }
-Counter >> count: anInteger [
+Counter2 >> count: anInteger [
 
 	count := anInteger 
 ]
 
 { #category : #accessing }
-Counter >> decrement [
+Counter2 >> decrement [
 
 	count := count - 1 
 ]
 
 { #category : #accessing }
-Counter >> increment [
-
-	count := count + 1 
-]
-
-{ #category : #accessing }
-Counter >> increment2 [
+Counter2 >> increment2 [
 
 	count := count + 2
 ]
 
 { #category : #accessing }
-Counter >> initialize [
+Counter2 >> incrementbis [
+
+	count := count + 1 
+]
+
+{ #category : #accessing }
+Counter2 >> initialize [
 
 	super initialize.
 	count := 0
 ]
 
 { #category : #accessing }
-Counter >> printOn: aStream [
+Counter2 >> printOn: aStream [
 
 	super printOn: aStream.
 	aStream nextPutAll: ' withValue: ' , count printString.
